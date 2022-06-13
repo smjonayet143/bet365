@@ -5,6 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        @media screen and (max-width: 700px) {
+            .first-h3{
+                /* background-color: red; */
+                /* display: inline-block; */
+                display: contents;
+                
+                margin-top: 1px;
+            }
+            .first-input{
+                background-color: brown;
+               margin-top: 8px;
+               /* height: 10px; */
+               
+            }
+            .secoend-input{
+                background-color: brown;
+            }
+        }
+        /* @media screen and (max-width) {
+            
+        } */
+    </style>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
@@ -12,12 +38,12 @@
     <h1 class=" text-4xl flex justify-center mt-14">Welcome To <span class="text-purple-900 font-bold"> Bet365</span></h1>
     
     <main>
-        <section class="bg-green-300 w-6/12  m-2 mt-8 p-8 mx-auto">
-                <h3 class=" text-2xl  p-4">Please Login</h3>    
+        <section class=" bg-green-300 w-6/12  m-2 mt-8 p-8 mx-auto">
+                <h3 class=" first-h3 text-2xl  p-4">Please Login</h3>    
                 <div class="items-center ">
-                    <input class="w-72 "  id="user-email" type="text" placeholder="   Enter Your Email">
+                    <input class="first-input w-72"  id="user-email" type="text" placeholder="   Enter Your Email">
                     <br> <br>
-                    <input class="w-72" id="user-password" type="text" placeholder="   Enter Your Password">
+                    <input class="w-72 secoend-input" id="user-password" type="text" placeholder="   Enter Your Password">
                     <br>
                     <button class="bg-purple-700 text-white rounded font-bold items m-4 px-3 py-1 p-2" id="login-button">Submit</button>
                 </div>
